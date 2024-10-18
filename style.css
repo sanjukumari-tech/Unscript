@@ -317,20 +317,86 @@ body, html {
   gap:1000px;
    padding-top:200px;
   }
-  .sub-footer-1 img:nth-child(2){
-    gap:5px;
-  }
+  
 
   .footer-mainlink{
-    display:flex;justify-content:center;align-item:center ;gap:250px;width:100%; color:gray;
+    display:flex;justify-content:center;align-item:center ;gap:225px;width:100%; color:gray;
   }
   .footer-mainlink h5{
     color: white;
   }
   .address{
-    display:flex;justify-content:center;align-item:center ;gap:250px;width:100%; color:gray;
+    display:flex;justify-content:center;align-item:center ;gap:170px;width:100%; color:gray;
   }
 
   .address div:nth-child(1){
     width:600px ;margin-left:-240px;
   }
+
+
+  /* demo subscription */
+
+  .demo-container {
+    width: 40%;
+    min-width: 900px;
+    gap: 40px;
+    border-radius: 32px;
+    border: 1px solid black;
+    display: flex;
+    border:none;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(78.81deg, #5b7dbc 4.03%, #dc7e7e 60%);
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left:100px;
+    margin-bottom: -5px;
+} 
+
+.demo-text {
+    display: flex;
+    
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+}
+
+.demo-description {
+    width: 300px;
+    margin: 10px 0; /* Added margin for spacing */
+}
+
+.subscribe-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* Removed border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor pointer for button */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+button:hover {
+    background-color: #333; /* Darken button on hover */
+}
+
+@media (max-width: 900px) {
+    .demo-container {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .demo-text, .demo-description {
+        width: auto; /* Allow flexible width */
+        text-align: left; /* Align text to the left */
+    }
+}
